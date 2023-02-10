@@ -1,0 +1,23 @@
+/* the webpage should look like google  */
+
+bodu,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+div {
+  height: 100dvh;
+
+  background-color: #4285f4;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 30px;
+}
+
+
+
