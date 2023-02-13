@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Odin's Rock Paper Scissors</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="title">ROCK PAPER SCISSORS</h1>
+    </header>
+    <main class="main">
+      <!-- * ScoreBoard Section Starts -->
+      <div class="scoreboard">
+        <h2 class="score-info" id="scoreInfo">Choose your Choice</h2>
+        <h3 class="score-message" id="scoreMessage">
+          First to score 5 points wins the game.
+        </h3>
+        <div class="score-container">
+          <div class="score-box">
+            <div class="sign" id="playerSign">🙋🏻‍♂️</div>
+            <p class="score" id="playerScore">Player: 0</p>
+          </div>
+          <div class="score-box">
+            <div class="sign" id="computerSign">🤖</div>
+            <p class="score" id="computerScore">Computer: 0</p>
+          </div>
+        </div>
+      </div>
+      <!-- * ScoreBoard Section Ends -->
+      <!-- ! Buttons Section Starts -->
+      <div class="buttons">
+        <button class="btn btn-square" id="rockBtn">
+          <div class="sign">🪨</div>
+        </button>
+        <button class="btn btn-square" id="paperBtn">
+          <div class="sign">📄</div>
+        </button>
+        <button class="btn btn-square" id="scissorsBtn">
+          <div class="sign">✂️</div>
+        </button>
+        <!-- ! Buttons Section Starts -->
+      </div>
+    </main>
+    <footer class="footer">
+      <p>Designed and Developed with 😍 by Ovrcode and YR Studios</p>
+      <span>
+        <script>
+          document.write(new Date().getDay());
+        </script>
+      </span>
+      /
+      <span>
+        <script>
+          document.write(new Date().getMonth());
+        </script>
+        /
+        <span>
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+        </span>
+      </span>
+    </footer>
+
+    <div class="modal" id="endgameModal">
+      <p class="modal-title" id="endgameMsg"></p>
+      <button class="btn btn-restart" id="restartBtn">Play again</button>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    <script src="index.js"></script>
+  </body>
+</html>
