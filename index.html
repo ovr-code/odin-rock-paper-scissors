@@ -5,18 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Odin Game</title>
+    <title>Rock Paper Scissors</title>
   </head>
   <body>
-    <div>
-      <h1>Welcome to Odin's Rock Paper and Scissors Game</h1>
-      <p>
-        At present the game is Console Based Only! so please open the console
-        tab from developer tools!
-      </p>
-      <a href="">Click Here if you're not sure how to open console</a>
-    </div>
+    <section>
+      <h1>Welcome To Rock Paper Scissors</h1>
+      <button><a href="./game.html">Let's Play</a></button>
+    </section>
 
-    <script src="index.js"></script>
+    <style>
+      section {
+        width: 100%;
+        height: 100vh;
+        overflow-y: hidden;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h1 {
+        font-size: 3rem;
+      }
+
+      button {
+        padding: 10px;
+        background-color: #1e1e1e;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+    </style>
   </body>
 </html>
